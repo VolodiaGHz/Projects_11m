@@ -1,8 +1,4 @@
 
 public enum ColorType {
-<<<<<<< HEAD
     BLUE, RED, BLACK, GREEN, WITHOUTCOLOR
-=======
-    WHITE, BLUE, RED, BLACK, GREEN, BROWN, ORANGE, YELLOW, PINK, PURPLE, GRAY, WITHOUTCOLOR
->>>>>>> f9adea0ec465bf3467f4510f80c04d0eafa792dd
 }

@@ -22,7 +22,6 @@ public class OtherGoods extends Goods {
         return super.toString() + " otherGoodsType = " + otherGoodsType + "\n";
     }
 
-<<<<<<< HEAD
     public String getHeaders() {
         return "name, price, amount, grade, color, otherGoodsType ";
     }
@@ -31,6 +30,4 @@ public class OtherGoods extends Goods {
         return getName() + ", " + getPrice() + ", " + getAmount() + ", " + getGrade() + ", " + getColorType() + ", " + getOtherGoodsType() + ". ";
     }
 
-=======
->>>>>>> f9adea0ec465bf3467f4510f80c04d0eafa792dd
 }

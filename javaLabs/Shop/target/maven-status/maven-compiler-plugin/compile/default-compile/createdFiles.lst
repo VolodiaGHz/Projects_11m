@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 GoodsWriter.class
-=======
-main.class
->>>>>>> f9adea0ec465bf3467f4510f80c04d0eafa792dd
 PagesNumber.class
 WritingGoods.class
 ColorType.class
@@ -10,16 +6,9 @@ OtherGoodsType.class
 ShopMeneger.class
 PaperGoods.class
 PapersType.class
-<<<<<<< HEAD
 Goods.class
 CustumerType.class
 rest\config.class
 GoodsType.class
 GoodsService.class
-=======
-com\company\Main.class
-Goods.class
-CustumerType.class
-GoodsType.class
->>>>>>> f9adea0ec465bf3467f4510f80c04d0eafa792dd
 OtherGoods.class

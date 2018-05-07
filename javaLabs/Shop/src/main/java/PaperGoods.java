@@ -40,7 +40,6 @@ public class PaperGoods extends Goods {
     public String toString() {
         return super.toString() + " titulPage = " + titulPage + ", pagesNumber = " + pagesNumber + ", paperType = " + paperType + "\n";
     }
-<<<<<<< HEAD
     public String getHeaders() {
         return "name, price, amount, grade, color, titulPage pagesNumber, paperType ";
     }
@@ -49,8 +48,6 @@ public class PaperGoods extends Goods {
         return getName() + ", " + getPrice() + ", " + getAmount() + ", " + getGrade() + ", " + getColorType() + ","+
                 getTitulPage() + "," + getPagesNumber() + ", " + getPaperType() + ". ";
     }
-=======
->>>>>>> f9adea0ec465bf3467f4510f80c04d0eafa792dd
 
 
 }
