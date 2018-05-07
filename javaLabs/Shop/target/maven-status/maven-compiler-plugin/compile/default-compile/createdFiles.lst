@@ -1,0 +1,14 @@
+GoodsWriter.class
+PagesNumber.class
+WritingGoods.class
+ColorType.class
+OtherGoodsType.class
+ShopMeneger.class
+PaperGoods.class
+PapersType.class
+Goods.class
+CustumerType.class
+rest\config.class
+GoodsType.class
+GoodsService.class
+OtherGoods.class

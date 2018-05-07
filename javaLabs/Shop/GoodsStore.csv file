@@ -1,0 +1,6 @@
+name, price, amount, grade, color, titulPage pagesNumber, paperType 
+Copybook, 20.0, 1000, FirstGRADE, RED,car,EIGTHTEEN, COPYBOOK. name, price, amount, grade, color, material, goodsType
+pen, 10.5, 400, EVERYONE, BLACK, plastic, PEN. name, price, amount, grade, color, titulPage pagesNumber, paperType 
+Book, 100.0, 36, GraduationGrade, BLUE,sport,MoreThanNINETISIX, BOOK. name, price, amount, grade, color, titulPage pagesNumber, paperType 
+Notebook, 100.0, 75, GraduationGrade, GREEN,sport,MoreThanNINETISIX, BOOK. name, price, amount, grade, color, otherGoodsType 
+Tape, 9.0, 698, EVERYONE, WITHOUTCOLOR, TAPE. 
