@@ -29,6 +29,7 @@ public class WritingGoods extends Goods {
     public String toString() {
         return super.toString() + " material = " + material + ", goodsType = " + goodsType + "\n";
     }
+<<<<<<< HEAD
     public String getHeaders() {
         return "name, price, amount, grade, color, material, goodsType";
     }
@@ -37,6 +38,8 @@ public class WritingGoods extends Goods {
         return getName() + ", " + getPrice() + ", " + getAmount() + ", " + getGrade() + ", " + getColorType() + ", "
                 + getMaterial() + ", " + getGoodsType() + ". ";
     }
+=======
+>>>>>>> f9adea0ec465bf3467f4510f80c04d0eafa792dd
 
 
 }

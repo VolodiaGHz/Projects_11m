@@ -1,6 +1,7 @@
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
+<<<<<<< HEAD
 import java.util.Map;
 
 public class ShopMeneger {
@@ -10,6 +11,13 @@ public class ShopMeneger {
     private  Map<Integer, Goods> goodsMap;
 
 //    public final void addGoods(final Goods addGoods){goodsList.add(addGoods);}
+=======
+
+public class ShopMeneger {
+    private String name;
+    private String adress;
+    private List<Goods> goodsList = new LinkedList<Goods>();
+>>>>>>> f9adea0ec465bf3467f4510f80c04d0eafa792dd
 
     public void setGoods(List<Goods> goodsList) {
         this.goodsList = goodsList;
@@ -19,19 +27,32 @@ public class ShopMeneger {
         return this.goodsList;
     }
 
+<<<<<<< HEAD
 //    public ShopMeneger() {
 //    }
+=======
+    public ShopMeneger() {
+    }
+>>>>>>> f9adea0ec465bf3467f4510f80c04d0eafa792dd
 
     public ShopMeneger(List<Goods> goodsList) {
         this.goodsList = goodsList;
 
     }
 
+<<<<<<< HEAD
 //   public void addGoods(Goods addGoods) {
 //        this.goodsList.add(addGoods);
 //    }
 
     public  List<Goods> searchByCustumerType(CustumerType grade) {
+=======
+    public void addGoods(Goods addGoods) {
+        this.goodsList.add(addGoods);
+    }
+
+    public List<Goods> searchByCustumerType(CustumerType grade) {
+>>>>>>> f9adea0ec465bf3467f4510f80c04d0eafa792dd
         List<Goods> result = new LinkedList<>();
         for (Goods good : goodsList) {
             if (good.getGrade() == grade) {
@@ -42,6 +63,7 @@ public class ShopMeneger {
     }
 
     public List<Goods> sortByColor(List<Goods> goods) {
+<<<<<<< HEAD
         goodsList.sort(Comparator.comparing(Goods::getColorType));
         return goodsList;
     }
@@ -62,5 +84,26 @@ public class ShopMeneger {
 //    public void setAdress(String adress) {
 //        this.adress = adress;
 //    }
+=======
+        goodsList.sort(Comparator.comparing(Goods::getColor));
+        return goodsList;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAdress() {
+        return adress;
+    }
+
+    public void setAdress(String adress) {
+        this.adress = adress;
+    }
+>>>>>>> f9adea0ec465bf3467f4510f80c04d0eafa792dd
 
 }

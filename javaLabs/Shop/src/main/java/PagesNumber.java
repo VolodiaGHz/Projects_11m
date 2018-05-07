@@ -1,4 +1,8 @@
 
 public enum PagesNumber {
+<<<<<<< HEAD
      EIGTHTEEN, MoreThanNINETISIX
+=======
+    TWELVE, EIGTHTEEN, TWENTYFOUR, THIRTYSIX, SIXTYFOUR, NINETISIX, MoreThanNINETISIX
+>>>>>>> f9adea0ec465bf3467f4510f80c04d0eafa792dd
 }
