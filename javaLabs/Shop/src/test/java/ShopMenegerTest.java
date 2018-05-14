@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Test;
+import ua.lviv.iot.*;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -14,14 +15,14 @@ public class ShopMenegerTest {
 
     @Test
     public void addGoods() {
-        goods.add(new PaperGoods("Copybook", 20, 1000, ColorType.RED, CustumerType.FirstGRADE,
-                "car", PagesNumber.EIGTHTEEN, PapersType.COPYBOOK));
+        goods.add(new PaperGoods("Copybook", 20, 1000,"car" ,PagesNumber.EIGTHTEEN, PapersType.COPYBOOK,
+                 ColorType.RED,CustumerType.FirstGRADE  ));
         goods.add(new WritingGoods("pen", 10.50, 400, ColorType.BLACK, GoodsType.PEN,
                 CustumerType.EVERYONE, "plastic"));
-        goods.add(new PaperGoods("Book", 100, 36, ColorType.BLUE, CustumerType.GraduationGrade,
-                "sport", PagesNumber.MoreThanNINETISIX, PapersType.BOOK));
-        goods.add(new PaperGoods("Notebook", 100, 75, ColorType.GREEN, CustumerType.GraduationGrade,
-                "sport", PagesNumber.MoreThanNINETISIX, PapersType.BOOK));
+        goods.add(new PaperGoods("Book", 100, 36,"sport",PagesNumber.MoreThanNINETISIX,
+                PapersType.BOOK, ColorType.BLUE, CustumerType.GraduationGrade   ));
+        goods.add(new PaperGoods("Notebook", 100, 75,"sport", PagesNumber.MoreThanNINETISIX,
+                PapersType.BOOK, ColorType.GREEN, CustumerType.GraduationGrade ));
         goods.add(new OtherGoods("Tape", 9, 698, ColorType.WITHOUTCOLOR,
                 CustumerType.EVERYONE, OtherGoodsType.TAPE));
     }
@@ -41,30 +42,31 @@ public class ShopMenegerTest {
     public void sortByColor() {
         addGoods();
         List<Goods> sortedGoods = shop.sortByColor(goods);
-        assertEquals(ColorType.BLACK.toString(), sortedGoods.get(0).getColor());
-        assertEquals(ColorType.BLUE.toString(), sortedGoods.get(1).getColor());
-        assertEquals(ColorType.GREEN.toString(), sortedGoods.get(2).getColor());
-        assertEquals(ColorType.RED.toString(),sortedGoods.get(3).getColor());
-        assertEquals(ColorType.WITHOUTCOLOR.toString(), sortedGoods.get(4).getColor());
+        assertEquals(ColorType.BLACK.toString(), sortedGoods.get(0).getColorType());
+        assertEquals(ColorType.BLUE.toString(), sortedGoods.get(1).getColorType());
+        assertEquals(ColorType.GREEN.toString(), sortedGoods.get(2).getColorType());
+        assertEquals(ColorType.RED.toString(),sortedGoods.get(3).getColorType());
+        assertEquals(ColorType.WITHOUTCOLOR.toString(), sortedGoods.get(4).getColorType());
     }
 
     @Test
     public void Writer() {
         GoodsWriter writer = new GoodsWriter();
-        goods.add(new PaperGoods("Copybook", 20, 1000, ColorType.RED, CustumerType.FirstGRADE,
-                "car", PagesNumber.EIGTHTEEN, PapersType.COPYBOOK));
+        goods.add(new PaperGoods("Copybook", 20, 1000,"car",PagesNumber.EIGTHTEEN,
+                PapersType.COPYBOOK,ColorType.RED, CustumerType.FirstGRADE));
         goods.add(new WritingGoods("pen", 10.50, 400, ColorType.BLACK, GoodsType.PEN,
                 CustumerType.EVERYONE, "plastic"));
-        goods.add(new PaperGoods("Book", 100, 36, ColorType.BLUE, CustumerType.GraduationGrade,
-                "sport", PagesNumber.MoreThanNINETISIX, PapersType.BOOK));
-        goods.add(new PaperGoods("Notebook", 100, 75, ColorType.GREEN, CustumerType.GraduationGrade,
-                "sport", PagesNumber.MoreThanNINETISIX, PapersType.BOOK));
+        goods.add(new PaperGoods("Book", 100, 36,"sport",PagesNumber.MoreThanNINETISIX,
+                PapersType.BOOK,ColorType.BLUE, CustumerType.GraduationGrade));
+        goods.add(new PaperGoods("Notebook", 100, 75,"sport",PagesNumber.MoreThanNINETISIX,
+                PapersType.BOOK,ColorType.GREEN, CustumerType.GraduationGrade));
         goods.add(new OtherGoods("Tape", 9, 698, ColorType.WITHOUTCOLOR,
                 CustumerType.EVERYONE, OtherGoodsType.TAPE));
         try {
             writer.writeToFile(shop.getGoods());
         }catch (Exception e){
             assertFalse(false);
+
         }
     }
 }
