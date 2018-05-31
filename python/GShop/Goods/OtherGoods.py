@@ -12,5 +12,5 @@ class OtherGoods(Goods):
 
     def __str__(self):
         return "Name : " + str(self.name) + " price: " + str(self.price) + "amount: " + str(self.amount) \
-               + "color: " + str(self.color) + "custumer type: " + str(self.custumer_type) \
+               + "color: " + str(self.color) + "custumer type: " + str(self.custumer_type)\
                + "goods type: " + str(self.other_goods_type)
